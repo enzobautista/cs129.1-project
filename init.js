@@ -1,0 +1,6 @@
+db.dropDatabase()
+load('DJIA.js')
+load('news.js')
+load('pwords.js')
+load('nwords.js')
+load('prog.js')
