@@ -36,14 +36,5 @@ reduce: reduce,
 out: 'news.report'
 });
 
-db.djia.find().forEach(
-function (object) {
-    var commonInBoth=db.news.report.findOne({_id:{date: object.Date}});
-    if (commonInBoth != null) {
-        printjsononeline(commonInBoth) ;
-        printjsononeline("Close:"+object.Close) ;
-    }else {
-        // did not match so we don't care in this case
-    }
-});
+
 
